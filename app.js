@@ -22,7 +22,9 @@ function dbTest(){
 	})
 	.then( (hfPair) => {
 		console.log('\n')
-		console.log(hfPair.asker.user.name + ' <-- linked with --> ' + hfPair.giver.user.name)
+		console.log(hfPair.asker.user.name + ' from ' + hfPair.asker.location
+			+ ' gives a high five to ' + 
+					hfPair.giver.user.name + ' from ' + hfPair.giver.location + '!')
 	})
 }
 
